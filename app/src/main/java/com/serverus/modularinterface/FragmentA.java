@@ -26,11 +26,17 @@ public class FragmentA extends Fragment implements AdapterView.OnItemClickListen
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         communicator = (Communicator) getActivity();
+
+        //get the list view from xml
         list = (ListView) getActivity().findViewById(R.id.listView);
 
+        // translate the string-array to ArrayAdapter to be set into a list
         ArrayAdapter adapter = ArrayAdapter.createFromResource(getActivity(), R.array.titles, android.R.layout.simple_list_item_1);
 
+        // use the adapter and use it as a reference for the list
         list.setAdapter(adapter);
+
+        // set a onClick listener for each list item
         list.setOnItemClickListener(this);
 
     }

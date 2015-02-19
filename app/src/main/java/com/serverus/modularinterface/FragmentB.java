@@ -36,9 +36,13 @@ public class FragmentB extends Fragment {
     }
 
     public void changeData(int position){
-        Resources res = getResources();
+        Resources res = getResources(); // to get the resources values
+        // getting the resources string-array description
+        // then push it inside the String[] array
         String[] descriptions = res.getStringArray(R.array.descriptions);
+        // get call the description index
         data = descriptions[position];
+        
         text.setText(descriptions[position]);
     }
 
