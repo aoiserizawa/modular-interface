@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ModularInterface</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string-array name="titles">
+        <item>Activities</item>
+        <item>Services</item>
+        <item>Content Provider</item>
+        <item>Intents and Intent Filters</item>
+    </string-array>
+
+    <string-array name="descriptions">
+        <item>Android apps are built as a combination of distinct components that can
+            be invoked individually
+        </item>
+        <item>Android provides an adaptive app framework that allows you to provide unique
+            resources for different device configurations
+        </item>
+        <item>From one component you can start another component using an intent</item>
+        <item>You can query the availability of device features at runtime if any app
+            features require specific hardware such as a camera</item>
+    </string-array>
+
+
+</resources>
